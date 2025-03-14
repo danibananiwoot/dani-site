@@ -1,0 +1,162 @@
+/* Universal styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Delius Swash Caps', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #59a6d9, #FF7A9B);
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    top: 0px;
+    width:100%;
+    text-align: center;
+    z-index: 10;
+    background-color: #ffffff9f;
+    padding-bottom: 4px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #59a6d9;
+    border: 3px solid #FF7A9B;
+    box-shadow: 5px 5px #FF7A9B;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 40px;
+}
+
+nav a:hover {
+    background-color: #eb5774;
+    border: 3px solid #FF7A9B;
+}
+
+/* Hero image styles */
+#illustrated-bookstore {
+    background-image: url(../media/illustrated-bookstore.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+    margin-top: 85px;
+}
+
+#illustrated-bookstore h1 {
+    padding: 0px 10px;
+    margin: 0px;
+    color: #ffdbf7;
+    max-width: 500px;
+    z-index: 9;
+    font-size: 50px;
+    position: relative;
+    top: 86%;
+}
+
+/* About Dani styles */
+#about-dani {
+    background-color: rgba(221, 130, 191, 0.3);
+    display: flex;
+    flex: content;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+#about-dani img {
+    border-radius: 50%;
+    max-width: 300px;
+    height: auto;
+    margin: 100px auto;
+}
+
+#about-dani h2 {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.favorites, .hobbies {
+    background-color: #ffffff9f;
+    margin: 100px auto;
+    max-height: 300px;
+    width: 350px;
+}
+
+.favorites {
+    color: #da69c5;
+}
+
+.hobbies {
+    color: #59a6d9;
+}
+
+/* Playground styles */
+#playground {
+    background-image: url(../media/plants-and-books.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+    margin-top: -30px;
+    position: relative;
+}
+
+#playground img {
+    position: relative;
+}
+
+#playground h2 {
+    padding: 0px 10px;
+    margin: 0px;
+    color: #ffdbf7;
+    max-width: 500px;
+    z-index: 9;
+    font-size: 50px;
+    position: relative;
+    top: 86%;
+}
+
+/* Footer styles */
+footer h2 {
+    text-align: center;
+    color: rgb(255, 220, 254);
+}
+
+@media only screen and (max-width: 715px) {
+    nav a {
+        font-size: 1.2rem;
+        margin: 10px 5px;
+    }
+
+    #illustrated-bookstore {
+      margin-top: 70px;
+    }
+
+    #about-dani {
+        display: block;
+    }
+
+    #about-dani img {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .favorites, .hobbies {
+        border: 1px solid red;
+        margin: 15px;
+        padding: 0px;
+    }
+
+    #about-dani h2 {
+        margin: 0px;
+    }
+}
