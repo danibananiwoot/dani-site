@@ -39,6 +39,11 @@ nav a:hover {
     border: 3px solid #FF7A9B;
 }
 
+nav a.active {
+    background-color: #eb5774;
+    transform: scale(1.05);
+}
+
 /* Hero image styles */
 #illustrated-bookstore {
     background-image: url(../media/illustrated-bookstore.png);
